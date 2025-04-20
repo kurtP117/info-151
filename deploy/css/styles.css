@@ -592,8 +592,13 @@ textarea {
 /* =============
     Promotion
 ============= */
+#promotion {
+  padding: 100px 24px;
+}
 #promotion p {
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 48px;
 }

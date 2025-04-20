@@ -4,12 +4,15 @@
 @use "../helpers";
 
 #promotion{
+    padding: 100px 24px;
 
 
     p{
         color: var(--grey);
         font-size: helpers.rem-calc(16);
         line-height: helpers.rem-calc(28);
+        margin-top: 24px;
+        margin-bottom: 48px;
 
     }
 
