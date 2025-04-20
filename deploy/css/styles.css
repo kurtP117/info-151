@@ -574,14 +574,19 @@ textarea {
 ============= */
 #howto {
   background-color: var(--white);
+  text-align: center;
+  padding: 110px 24px;
 }
 #howto section p {
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.75rem;
+  margin-bottom: 24px;
 }
 #howto section #column {
+  text-align: left;
   border: 1px solid var(--lilyWhite);
+  margin-bottom: 54px;
 }
 #howto section #column h2 {
   color: var(--nightBlue);
@@ -594,6 +599,7 @@ textarea {
 ============= */
 #promotion {
   padding: 100px 24px;
+  text-align: center;
 }
 #promotion p {
   color: var(--grey);
