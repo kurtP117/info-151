@@ -459,3 +459,45 @@ textarea {
   background-color: var(--nightBlue);
   color: var(--white);
 }
+
+/* =============
+    About
+============= */
+#about {
+  background-color: var(--white);
+}
+#about section h1 {
+  color: var(--nightBlue);
+}
+#about section p {
+  color: var(--grey);
+}
+#about section #safe h2 {
+  color: var(--nightBlue);
+}
+#about section #safe p {
+  color: var(--grey);
+}
+
+/* =============
+    Howto
+============= */
+#howto {
+  background-color: var(--white);
+}
+#howto section h1 {
+  color: var(--nightBlue);
+}
+#howto section p {
+  color: var(--grey);
+}
+#howto section #column {
+  border: 1px solid var(--lilyWhite);
+}
+#howto section #column h2 {
+  color: var(--nightBlue);
+}
+
+/* =============
+    Promotion
+============= */
