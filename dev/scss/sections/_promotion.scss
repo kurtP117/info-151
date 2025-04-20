@@ -5,12 +5,12 @@
 
 #promotion{
 
-    //h1{
-        //color: var(--nightBlue);
-    //}
 
     p{
         color: var(--grey);
+        font-size: helpers.rem-calc(16);
+        line-height: helpers.rem-calc(28);
+
     }
 
 }

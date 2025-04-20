@@ -5,19 +5,18 @@
 
 #hero{
    background-color: var(--lilyWhite);
+   padding: 56px 24px;
 
    section{
 
         article{
-            //h1{
-                //color: var(--nightBlue);
-                //font-size: helpers.rem-calc(50);
-            //}
 
             p{
                 color: var(--grey);
                 font-weight: 600;
                 line-height: helpers.rem-calc(28);
+                margin-top: 24px;
+                margin-bottom: 24px;
 
             }
             
@@ -25,6 +24,11 @@
             a:link, a:visited{
                 background-color: var(--nightBlue);
                 color: var(--white);
+                font-size: helpers.rem-calc(14);
+                font-weight: 600;
+                padding: 22px 36px;
+                border-radius: 6px;
+                display: inline-block;
 
             }
 
@@ -35,8 +39,10 @@
             button{
                 background-color: var(--white);
                 border: none;
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
+                height: 60px;
+                width: 60px;
+                border-radius: 100%;
+                margin-left: 30px;
 
             }
 
@@ -44,6 +50,9 @@
 
         #hero-card{
             background-color: var(--snowdrop);
+            margin-top: 70px;
+            padding: 24px 20px;
+            border-radius: 12px;
 
             h5{
                 color: var(--nightBlue);
@@ -54,7 +63,6 @@
             p{
                 font-size: helpers.rem-calc(14);
                 font-weight: 600;
-                line-height: helpers.rem-calc(24);
             }
 
         }

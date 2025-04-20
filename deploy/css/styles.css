@@ -331,6 +331,29 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
 .img-scaler {
   width: 100%;
 }
@@ -389,24 +412,37 @@ textarea {
 ============= */
 #hero {
   background-color: var(--lilyWhite);
+  padding: 56px 24px;
 }
 #hero section article p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 #hero section article a:link, #hero section article a:visited {
   background-color: var(--nightBlue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  display: inline-block;
 }
 #hero section article button {
   background-color: var(--white);
   border: none;
-  font-size: 0.875rem;
-  font-weight: 600;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-left: 30px;
 }
 #hero section #hero-card {
   background-color: var(--snowdrop);
+  margin-top: 70px;
+  padding: 24px 20px;
+  border-radius: 12px;
 }
 #hero section #hero-card h5 {
   color: var(--nightBlue);
@@ -416,37 +452,56 @@ textarea {
 #hero section #hero-card p {
   font-size: 0.875rem;
   font-weight: 600;
-  line-height: 1.5rem;
 }
 /* =============
     Packages
 ============= */
 #packages {
   background-color: var(--lilyWhite);
+  padding: 100px 24px;
 }
-#packages #package-button-container {
+#packages #top-content {
+  text-align: center;
+}
+#packages #top-content #package-button-container {
   background-color: var(--white);
+  margin: 24px 0px;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
 }
-#packages #package-button-container button {
+#packages #top-content #package-button-container button {
   border: none;
 }
-#packages #package-button-container #left {
+#packages #top-content #package-button-container button img {
+  width: 24px;
+  height: 24px;
+}
+#packages #top-content #package-button-container #left {
   background-color: var(--white);
   color: var(--grey);
+  padding: 13px 18px;
 }
-#packages #package-button-container #right {
+#packages #top-content #package-button-container #right {
   background-color: var(--aqua);
   color: var(--white);
+  padding: 13px 18px;
+  border-radius: 8px;
 }
 #packages #package-card-container .package-card {
   background-color: var(--ghost);
   border: 1px solid var(--white);
+  margin-bottom: 40px;
+  padding: 16px;
+  border-radius: 14px;
+  padding: 16px;
 }
 #packages #package-card-container .package-card p {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  margin: 20px 0 16px;
 }
 #packages #package-card-container .package-card h3 {
   color: var(--aqua);
@@ -496,12 +551,18 @@ textarea {
 }
 #about section p {
   color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 #about section #safe h2 {
   color: var(--nightBlue);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #about section #safe p {
   color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 
 /* =============
@@ -512,12 +573,16 @@ textarea {
 }
 #howto section p {
   color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 #howto section #column {
   border: 1px solid var(--lilyWhite);
 }
 #howto section #column h2 {
   color: var(--nightBlue);
+  font-size: 1.5rem;
+  line-height: 2.125rem;
 }
 
 /* =============
@@ -525,4 +590,6 @@ textarea {
 ============= */
 #promotion p {
   color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
