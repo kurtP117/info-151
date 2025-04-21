@@ -5,11 +5,15 @@
 
 #about{
     background-color: var(--white);
+    padding: 60px 24px;
+
     section{
         p{
             color: var(--grey);
             font-size: helpers.rem-calc(16);
             line-height: helpers.rem-calc(28);
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
 
         #safe{
@@ -22,9 +26,17 @@
                 color: var(--grey);
                 font-size: helpers.rem-calc(16);
                 line-height: helpers.rem-calc(28);
+                margin-bottom: 16px;
             }
 
+
         }
+
+        #abt-image{
+            margin-top: 64px;
+
+        }
+
 
     }
 

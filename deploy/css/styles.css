@@ -552,11 +552,14 @@ textarea {
 ============= */
 #about {
   background-color: var(--white);
+  padding: 60px 24px;
 }
 #about section p {
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.75rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 #about section #safe h2 {
   color: var(--nightBlue);
@@ -567,6 +570,10 @@ textarea {
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.75rem;
+  margin-bottom: 16px;
+}
+#about section #abt-image {
+  margin-top: 64px;
 }
 
 /* =============
