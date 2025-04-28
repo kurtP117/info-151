@@ -721,6 +721,21 @@ textarea {
 #about {
   background-color: var(--white);
   padding: 60px 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  #about {
+    -ms-grid-columns: 1fr 80px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 #about section p {
   color: var(--grey);
@@ -729,19 +744,37 @@ textarea {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-#about section #safe h2 {
+#about section .safe-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+#about section .safe-item img {
+  width: 40px;
+  height: 40px;
+}
+#about section .safe-item div h2 {
   color: var(--nightBlue);
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-#about section #safe p {
+#about section .safe-item div p {
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.75rem;
   margin-bottom: 16px;
 }
-#about section #abt-image {
-  margin-top: 64px;
+#about aside {
+  text-align: center;
+}
+#about aside img {
+  max-width: 100%;
+  border-radius: 12px;
 }
 
 /* =============
