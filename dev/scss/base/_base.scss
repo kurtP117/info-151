@@ -33,7 +33,7 @@ div{
 .content-padding{
     padding: 40px 24px;
 
-    @include xl{
+    @include helpers.xl{
         padding: 100px 24px;
     }
 }
