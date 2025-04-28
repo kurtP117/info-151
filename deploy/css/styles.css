@@ -775,13 +775,57 @@ textarea {
 #promotion {
   padding: 100px 24px;
   text-align: center;
+  background-color: var(--lilywhite);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title" "icon" "text" "image";
+  justify-items: center;
+  row-gap: 24px;
+}
+@media (min-width: 768px) {
+  #promotion {
+    padding: 120px 24px;
+  }
+}
+#promotion .section-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--nightBlue);
 }
 #promotion p {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: text;
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.75rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+#promotion img.img-scaler {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: image;
+  display: block;
   margin-top: 24px;
-  margin-bottom: 48px;
+  height: auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  #promotion img.img-scaler {
+    max-width: 700px;
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #promotion img.img-scaler {
+    max-width: 1000px;
+    padding: 0;
+  }
 }
 
 /* =============

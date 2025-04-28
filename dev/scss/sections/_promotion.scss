@@ -6,15 +6,56 @@
 #promotion{
     padding: 100px 24px;
     text-align: center;
+    background-color: var(--lilywhite);
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "icon"
+        "text"
+        "image";
+    justify-items: center;
+    row-gap: 24px;
+
+    @include helpers.md{
+        padding: 120px 24px;
+    }
+
+    .section-title{
+        grid-area: title;
+        font-size: helpers.rem-calc(36);
+        font-weight: 700;
+        color: var(--nightBlue);
+
+    }
 
 
     p{
+        grid-area: text;
         color: var(--grey);
         font-size: helpers.rem-calc(16);
         line-height: helpers.rem-calc(28);
-        margin-top: 24px;
-        margin-bottom: 48px;
+        margin: 0 auto;
+        max-width: 600px;
 
+    }
+
+    img.img-scaler{
+        grid-area: image;
+        display: block;
+        margin-top: 24px;
+        height: auto;
+        max-width: 600px;
+        padding: 0 20px;
+
+        @include helpers.md{
+            max-width: 700px;
+            padding: 0 40px;
+        }
+
+        @include helpers.xl{
+            max-width: 1000px;
+            padding: 0;
+        }
     }
     
 
