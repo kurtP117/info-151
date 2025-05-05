@@ -12,6 +12,16 @@ body{
     line-height: helpers.rem-calc(65);
     color: var(--nightBlue);
 
+    span{
+        position: relative;
+
+        img{
+            position: absolute;
+            top: -5px;
+            left: 4px;
+        }
+    }
+
 
 }
 

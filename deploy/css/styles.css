@@ -379,6 +379,14 @@ body {
   line-height: 4.0625rem;
   color: var(--nightBlue);
 }
+.section-title span {
+  position: relative;
+}
+.section-title span img {
+  position: absolute;
+  top: -5px;
+  left: 4px;
+}
 
 /* =============
     Buttons
