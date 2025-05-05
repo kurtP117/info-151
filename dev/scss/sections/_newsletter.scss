@@ -13,6 +13,7 @@
 
     @include helpers.lg{
         display: grid;
+        align-items: center;
         grid-template-columns: 70% auto;
         padding: 0px 0px;
         gap: 74px;
@@ -38,6 +39,12 @@
     
         form{
             
+            @include helpers.md{
+                display: flex;
+                padding: 12px 8px;
+                background-color: var(--white);
+
+            }
             input{
                 border: none;
                 color: var(--grey);

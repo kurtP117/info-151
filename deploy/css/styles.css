@@ -778,6 +778,9 @@ textarea {
   #newsletter {
     display: -ms-grid;
     display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-grid-columns: 70% 74px auto;
     grid-template-columns: 70% auto;
     padding: 0px 0px;
@@ -801,6 +804,15 @@ textarea {
   line-height: 1.75rem;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #newsletter #newsletter-left form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 8px;
+    background-color: var(--white);
+  }
 }
 #newsletter #newsletter-left form input {
   border: none;
