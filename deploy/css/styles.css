@@ -550,80 +550,36 @@ textarea {
 }
 
 /* =============
-    Newsletter
+    Contact
 ============= */
-#newsletter {
-  background-color: var(--lilyWhite);
-  padding: 40px 24px;
+#contact .contact-section {
+  text-align: center;
+  padding: 80px 24px;
+  background-color: #f0f7ff;
+  color: black;
 }
-@media (min-width: 768px) {
-  #newsletter {
-    padding: 60px 20vw;
-  }
+#contact .contact-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--nightBlue);
 }
-@media (min-width: 992px) {
-  #newsletter {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-grid-columns: 70% 74px auto;
-    grid-template-columns: 70% auto;
-    padding: 0px 0px;
-    gap: 74px;
-  }
+#contact .contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
 }
-@media (min-width: 1200px) {
-  #newsletter {
-    width: 1200px;
-    margin: 0 auto;
-  }
+#contact .email-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--aqua);
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
-@media (min-width: 992px) {
-  #newsletter #newsletter-left {
-    padding: 40px 24px;
-  }
-}
-#newsletter #newsletter-left p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-@media (min-width: 768px) {
-  #newsletter #newsletter-left form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 12px 8px;
-    background-color: var(--white);
-  }
-}
-#newsletter #newsletter-left form input {
-  border: none;
-  color: var(--grey);
-  font-weight: 600;
-}
-#newsletter #newsletter-left form button {
-  border: none;
-  background-color: var(--nightBlue);
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 60px;
-}
-#newsletter aside {
-  display: none;
-}
-@media (min-width: 992px) {
-  #newsletter aside {
-    display: block;
-  }
-}
-#newsletter aside img {
-  margin-top: 5px;
+#contact .email-btn:hover {
+  background-color: #00b8aa;
 }
 
 /* =============
@@ -734,62 +690,62 @@ textarea {
 }
 
 /* =============
-    Promotion
+    Association
 ============= */
-#promotion {
-  padding: 100px 24px;
+#association .associations-section {
+  background-color: #f4f9ff;
+  padding: 60px 24px;
   text-align: center;
-  background-color: var(--lilywhite);
+}
+#association .associations-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "title" "icon" "text" "image";
-  justify-items: center;
-  row-gap: 24px;
-}
-@media (min-width: 768px) {
-  #promotion {
-    padding: 120px 24px;
-  }
-}
-#promotion .section-title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: title;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--nightBlue);
-}
-#promotion p {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: text;
-  color: var(--grey);
-  font-size: 1rem;
-  line-height: 1.75rem;
+  gap: 30px;
+  max-width: 1000px;
   margin: 0 auto;
-  max-width: 600px;
-}
-#promotion img.img-scaler {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: image;
-  display: block;
-  margin-top: 24px;
-  height: auto;
-  max-width: 600px;
-  padding: 0 20px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 @media (min-width: 768px) {
-  #promotion img.img-scaler {
-    max-width: 700px;
-    padding: 0 40px;
+  #association .associations-grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1200px) {
-  #promotion img.img-scaler {
-    max-width: 1000px;
-    padding: 0;
-  }
+#association .assoc-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+  max-width: 450px;
+}
+#association .assoc-card h2 {
+  color: var(--nightBlue);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+#association .assoc-card p {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#association .assoc-card a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: var(--aqua);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+#association .assoc-card a:hover {
+  background-color: #00b8aa;
 }
 
 /* =============
