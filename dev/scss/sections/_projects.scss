@@ -1,0 +1,68 @@
+/* =============
+    Projects
+============= */
+@use "../helpers";
+
+#projects{
+
+    .projects-section {
+        padding: 60px 24px;
+        background-color: #001f3f;;
+        text-align: center;
+      }
+      
+      .projects-section .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: var(--lilyWhite);
+      }
+      
+      .projects-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      
+        @media (min-width: 900px) {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+      
+      .project-card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        padding: 24px;
+        flex: 1;
+        max-width: 320px;
+        margin: 0 auto;
+      
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 12px;
+          color: var(--nightBlue);
+        }
+      
+        p {
+          font-size: 1rem;
+          margin-bottom: 16px;
+          color: black;
+          line-height: 1.6;
+        }
+      
+        a {
+          display: inline-block;
+          background-color: var(--aqua);
+          color: white;
+          padding: 10px 16px;
+          border-radius: 6px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+      
+        a:hover {
+          background-color: #00b8aa;
+        }
+      }
+
+}
