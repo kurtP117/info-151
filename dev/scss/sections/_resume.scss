@@ -1,0 +1,84 @@
+/* =============
+    Resume
+============= */
+@use "../helpers";
+
+#resume{
+    .resume-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 80px 24px;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        color: black;
+        background-color: #f0f7ff; /* Soft blue background */
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      }
+      
+      .section-title {
+        font-size: 3rem;
+        margin-bottom: 50px;
+        color: var(--nightBlue);
+      }
+      
+      .resume-header {
+        margin-bottom: 40px;
+      
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 8px;
+        }
+      
+        p, a {
+          font-size: 1rem;
+          color: black;
+        }
+      
+        .download-btn {
+          margin-top: 20px;
+          display: inline-block;
+          padding: 12px 24px;
+          background-color: var(--nightBlue);
+          color: white;
+          border-radius: 6px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+      
+        .download-btn:hover {
+          background-color: #000066;
+        }
+      }
+      
+      .resume-block {
+        margin: 60px 0;
+        text-align: center;
+      
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+          color: var(--nightBlue);
+        }
+      
+        p {
+          font-size: 1.05rem;
+          margin-bottom: 10px;
+          color: black;
+        }
+      
+        ul {
+          padding-left: 0; 
+          margin-top: 10px;
+          list-style-position: inside; 
+          display: inline-block; 
+          text-align: left; 
+        }
+      
+        ul li {
+          margin-bottom: 10px;
+          line-height: 1.6;
+          color: black;
+        }
+      }
+}
